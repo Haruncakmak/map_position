@@ -1,0 +1,136 @@
+.leaflet-container {
+  width: 80vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #0488fc;
+  color: white;
+  background: #0488fc;
+  box-shadow: 0 0 4px rgba(214, 234, 248);
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.button_delete {
+  width: 5rem;
+  height: 2rem;
+
+  font: inherit;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #8b005d;
+  color: white;
+  background: #8b005d;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  border-radius: 12px;
+  float: right;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: #3498db;
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(214, 234, 248);
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: auto;
+  }
+}
+
+.position_button {
+  width: 50%;
+  font: inherit;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #cd5c5c;
+  color: white;
+  background-color: #cd5c5c;
+  box-shadow: 0 0 4px rgba(214, 234, 248);
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button_exit {
+  color: white;
+  background: #ff0000;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  width: 25rem;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  background-color: #4b4b4b;
+}
+
+.item_latlng {
+  gap: 1rem;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.item_date {
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #cd5c5c;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+@media (min-width: 580px) {
+  .expense-item__description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .expense-item__description h2 {
+    font-size: 1.25rem;
+  }
+
+  .expense-item__price {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.container_latlng {
+  border: solid #4b4b4b;
+  border-radius: 12px;
+  margin: 0.5rem 0.5rem;
+}
